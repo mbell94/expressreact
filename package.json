@@ -18,5 +18,6 @@
     "morgan": "latest",
     "mssql": "^3.3.0",
     "node-uuid": "latest"
-  }
+  },
+  "github": "https://github.com/mbell94/expressreact.git"
 }
