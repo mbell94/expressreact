@@ -7,6 +7,7 @@ var morgan = require('morgan');
 var uuid = require('node-uuid');
 var edge = require('edge');
 var mongo = require('mongoose');
+var bodyParser = require('body-parser');
 var configdb = require('./config/database');
 mongo.connect(configdb.url);
 
@@ -19,10 +20,12 @@ var helloWorld = edge.func(`
 app.set('view engine', 'ejs');
 
 app.use(morgan('dev'));
-app.use(session({ secret: uuid.v1(),
-                  saveUninitialized: true,
-                  resave: true 
-                }));
+app.use(session({
+    secret: uuid.v1(),
+    saveUninitialized: true,
+    resave: true
+}));
+app.use(bodyParser.urlEncoded({ extended: true }));
 app.use(express.static(__dirname + '/styles'));
 
 // app.get('/', function (req, res) {
