@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include ../partials/head %>
+    </head>
+    <body class="container">
+
+        <header>
+            <% include ../partials/header %>
+        </header>
+
+        <main>
+            <div class="jumbotron">
+                <h1>This is great</h1>
+                <p>Welcome to templating using EJS</p>
+                <h2>Variable</h2>
+                <p><%= tagline %></p>
+                <table class="table table-striped table-condensed">
+                    <tr>
+                        <th>Drinks</th>
+                        <th>Drunkness</th>                        
+                    </tr>
+                    <% drinks.forEach(function(drink) { %>
+                        <tr>
+                            <td><%= drink.name %></td>
+                            <td><%= drink.drunkness %></td>
+                        </tr>
+                    <% }); %>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <% include ../partials/footer %>
+        </footer>
+        
+    </body>
+</html>
