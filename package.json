@@ -20,5 +20,7 @@
         "node-uuid": "latest",
         "body-parser": "latest"
     },
-    "repository": "https://github.com/mbell94/expressreact.git"
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/mbell94/expressreact.git"}
 }
