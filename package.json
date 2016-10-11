@@ -21,6 +21,7 @@
         "body-parser": "latest"
     },
     "repository": {
-      "type": "git",
-      "url": "https://github.com/mbell94/expressreact.git"}
+        "type": "git",
+        "url": "https://github.com/mbell94/expressreact.git"
+    }
 }

@@ -9,6 +9,7 @@ var edge = require('edge');
 var mongo = require('mongoose');
 var bodyParser = require('body-parser');
 var configdb = require('./config/database');
+
 mongo.connect(configdb.url);
 
 var helloWorld = edge.func(`
@@ -25,7 +26,7 @@ app.use(session({
     saveUninitialized: true,
     resave: true
 }));
-app.use(bodyParser.urlEncoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(__dirname + '/styles'));
 
 // app.get('/', function (req, res) {
