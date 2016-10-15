@@ -1,27 +1,30 @@
 {
-    "name": "expressreact",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "edge": "latest",
-        "ejs": "latest",
-        "express": "^4.14.0",
-        "express-session": "latest",
-        "mongoose": "latest",
-        "morgan": "latest",
-        "mssql": "^3.3.0",
-        "node-uuid": "latest",
-        "body-parser": "latest"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/mbell94/expressreact.git"
-    }
+  "name": "expressreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "latest",
+    "connect-flash": "^0.1.1",
+    "edge": "latest",
+    "ejs": "latest",
+    "express": "^4.14.0",
+    "express-session": "latest",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "mssql": "^3.3.0",
+    "node-uuid": "latest",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbell94/expressreact.git"
+  }
 }

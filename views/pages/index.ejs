@@ -4,30 +4,17 @@
         <% include ../partials/head %>
     </head>
     <body class="container">
-        <div class="jumbotron text-center">
-            <h1><span class="fa fa-lock"></span> Node Authentication</h1>
-
-            <p>Login or Register with:</p>
-            <a href="/pages/signup" class="btn btn-default"><span class="fa fa-user"</span>Local Signup</a>
-        </div>  
         <header>
-              <% include ../partials/header %>
+            <% include ../partials/header %>
          </header>
+        <main>
+            <div class="jumbotron text-center">
+                <h1><span class="fa fa-lock"></span> Node Authentication</h1>
 
-         <main>
-             <div class="jumbotron">
-                 <h1>This is great</h1>
-                 <p>Welcome to templating using EJS</p>
-                 <h2>Variable</h2>
-                 <table class="table table-striped table-condensed">
-                     <tr>
-                        <th>Drinks</th>
-                         <th>Drunkness</th>                     
-                     </tr>
-                 </table>
-             </div>
-         </main>
-
+                <p>Login or Register with:</p>
+                <a href="/signup" class="btn btn-default"><span class="fa fa-user"</span>Local Signup</a>
+            </div> 
+        </main> 
          <footer>
              <% include ../partials/footer %>
          </footer>
